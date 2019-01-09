@@ -1,0 +1,18 @@
+html,body,div,ul,li,ol,a,h1,h2,h3,h4,h5,h6{
+    padding:0;
+    margin:0;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.header-back{
+    float:right;
+    margin-right: 80px;
+}
+
+.person_info{
+    font-size: 0.5em;
+    margin-left:10px;
+}

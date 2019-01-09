@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>登录成功</title>
+</head>
+<body>
+<div class="header-back">欢迎回来 <span id="username"></span><a href="personInformation.jsp" class="person_info">[个人资料]</a></div>
+<div class="clearfix"><hr></div>
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+            url: '/info',
+            method: 'GET',
+            dataType: 'json',
+            success(ret) {
+                console.log(ret);
+                $('#username').html(ret.name);
+            }
+        });
+    });
+</script>
+</body>
+</html>
+

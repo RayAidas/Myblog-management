@@ -1,0 +1,1 @@
+select * from user left join articles on user.id=articles.art_user_id
